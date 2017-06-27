@@ -8,7 +8,5 @@ input_2_10 = convertTo10(input_2,16)
 xor = (input_1_10 ^ input_2_10)
 output = convertToHex(xor)
 
-print (output)
-
 if output == '746865206b696420646f6e277420706c6179':
     print ('It Worked')
