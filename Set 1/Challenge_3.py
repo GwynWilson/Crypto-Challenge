@@ -46,15 +46,19 @@ def bestResults(dic,n=5):
         k.remove(key)
         v_v.remove(v_v_max)
         v.remove(cor_v)
-    return top
+    if n==1:
+        return top[0]
+    else:
+        return top
 
-top_5 = bestResults(allChr)
-print ("Top 5 answers are:")
-print (top_5)
-
-answer = top_5[1]
-print ("Final answer and characters:")
-print (answer[0],":",answer[1][1])
+if __name__ == "__main__":
+    top_5 = bestResults(allChr)
+    print ("Top 5 answers are:")
+    print (top_5)
+    
+    answer = top_5[1]
+    print ("Final answer and characters:")
+    print (answer[0],":",answer[1][1])
 
 
     
